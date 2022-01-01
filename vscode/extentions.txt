@@ -1,0 +1,12 @@
+code --install-extension christian-kohler.path-intellisense
+code --install-extension donjayamanne.githistory
+code --install-extension esbenp.prettier-vscode
+code --install-extension janisdd.vscode-edit-csv
+code --install-extension MS-CEINTL.vscode-language-pack-ja
+code --install-extension ms-python.python
+code --install-extension ms-python.vscode-pylance
+code --install-extension ms-toolsai.jupyter
+code --install-extension ms-toolsai.jupyter-keymap
+code --install-extension ms-toolsai.jupyter-renderers
+code --install-extension njpwerner.autodocstring
+code --install-extension oderwat.indent-rainbow
