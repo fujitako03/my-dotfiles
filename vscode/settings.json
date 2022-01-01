@@ -1,0 +1,50 @@
+{
+  "vim.commandLineModeKeyBindingsNonRecursive": [],
+  // ブックマーク
+  "bookmarks.treeview.visible": true,
+
+  // システムのclipboardにコピー
+  "vim.useSystemClipboard": true,
+  // easymotion
+  "vim.easymotion": true,
+  // カーソル上にあるワードを"*"で検索
+  "vim.visualstar": true,
+  // 諸々のctrlキーを使った操作が有効になる
+  "vim.useCtrlKeys": true,
+  // PythonのPATHをワークスペースの仮想環境にする
+  "python.pythonPath": "${workspaceFolder}/venv/Scripts/python.exe",
+  // 仮想環境にインストールしたファイルは監視対象から除外する
+  "files.watcherExclude": {
+    "**/venv/**": true
+  },
+  "git.autofetch": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+
+  // フォーマッターを設定
+
+  // import文の自動フォーマット
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  // docstring
+"autoDocstring.docstringFormat": "google",
+"python.formatting.autopep8Args": [
+    "--max-line-length",
+    "150"
+],
+"workbench.editorAssociations": {
+  "*.ipynb": "jupyter-notebook"
+},
+"jupyter.askForKernelRestart": false,
+"hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWw7Z2NwMlwiLFwiY3VzdG9tTGlicmFyaWVzXCI6W1wiTC5zY3JhdGNocGFkXCJdLFwicGx1Z2luc1wiOltdLFwicmVjZW50Q29sb3JzXCI6W1wiQzRDNEM0XCIsXCJGRkZGRkZcIl0sXCJmb3JtYXRXaWR0aFwiOlwiMjQwXCIsXCJjcmVhdGVUYXJnZXRcIjpmYWxzZSxcInBhZ2VGb3JtYXRcIjp7XCJ4XCI6MCxcInlcIjowLFwid2lkdGhcIjo4MjcsXCJoZWlnaHRcIjoxMTY5fSxcInNlYXJjaFwiOnRydWUsXCJzaG93U3RhcnRTY3JlZW5cIjp0cnVlLFwiZ3JpZENvbG9yXCI6XCIjZDBkMGQwXCIsXCJkYXJrR3JpZENvbG9yXCI6XCIjNmU2ZTZlXCIsXCJhdXRvc2F2ZVwiOnRydWUsXCJyZXNpemVJbWFnZXNcIjpudWxsLFwib3BlbkNvdW50ZXJcIjowLFwidmVyc2lvblwiOjE4LFwidW5pdFwiOjEsXCJpc1J1bGVyT25cIjpmYWxzZSxcInVpXCI6XCJcIn0ifQ==",
+"notebook.cellToolbarLocation": {
+  "default": "right",
+  "jupyter-notebook": "left"
+},
+"explorer.confirmDragAndDrop": false,
+"diffEditor.ignoreTrimWhitespace": false,
+"workbench.colorTheme": "Monokai Dimmed",
+"workbench.preferredLightColorTheme": "Monokai",
+"window.zoomLevel": 2
+}
