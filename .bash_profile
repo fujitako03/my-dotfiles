@@ -1,21 +1,18 @@
 # alias
-alias d='cd'
-alias ..='ls -la'
-alias rm='rm -i'
-alias mv='mv -i'
+source ~/.bash_alias
 
 # ============
 # path
 # ============
 # poetry
-export PATH="$HOME/.poetry/bin:$PATH"
+# export PATH="$HOME/.poetry/bin:$PATH"
 
 # google-cloud-sdk
-export PATH="$HOME/tool/google-cloud-sdk/bin:$PATH"
+# export PATH="$HOME/tool/google-cloud-sdk/bin:$PATH"
 
 # pyenv path
-export PATH="$HOME/.pyenv/bin:$PATH"
-eval "$(pyenv init - zsh --no-rehash)"
-eval "$(pyenv virtualenv-init -)"
+# export PATH="$HOME/.pyenv/bin:$PATH"
+# eval "$(pyenv init - zsh --no-rehash)"
+# eval "$(pyenv virtualenv-init -)"
 
 
