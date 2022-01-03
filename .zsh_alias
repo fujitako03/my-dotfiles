@@ -1,4 +1,4 @@
-#zsh
+#run zshrc
 alias sz='source ~/.zshrc'
 
 #ファイル操作
@@ -12,7 +12,7 @@ alias cp='cp -i'
 #vim
 alias v='vim'
 alias vz='vim ~/.zshrc'
-alias va='vim ~/.alias'
+alias va='vim ~/.zsh_alias'
 
 #jupyter
 alias jn='jupyter notebook --NotebookApp.use_redirect_file=False'
@@ -26,4 +26,7 @@ alias d="cdls"
 
 # venv
 alias sv='source .venv/bin/activate'
+
+# githubを開く
+alias github="xdg-open https://github.com/fujitako03"
 
