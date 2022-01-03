@@ -1,0 +1,29 @@
+#zsh
+alias sz='source ~/.zshrc'
+
+#ファイル操作
+alias ll='ls -al'
+
+#処理確認
+alias rm='rm -i'
+alias mv='mv -i'
+alias cp='cp -i'
+
+#vim
+alias v='vim'
+alias vz='vim ~/.zshrc'
+alias va='vim ~/.alias'
+
+#jupyter
+alias jn='jupyter notebook --NotebookApp.use_redirect_file=False'
+
+#cdしたあとにls
+cdls ()
+{
+    \cd "$@" && ll
+}
+alias d="cdls"
+
+# venv
+alias sv='source .venv/bin/activate'
+
