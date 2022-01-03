@@ -16,3 +16,5 @@ done
 # ln -snfv ${PWD}/setting.json ~/.vscode-server/data/Machine/
 # ln -snfv ${PWD}/keybindings.json /mnt/c/Users/okome/AppData/Roaming/Code/User/keybindings.json
 
+# 変更を反映
+source ~/.zshrc
