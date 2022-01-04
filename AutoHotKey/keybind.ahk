@@ -1,16 +1,16 @@
-; ¡–³•ÏŠ·E•ÏŠ·ƒL[’P“Æ‚Í–³•ÏŠ·ƒL[‚Æ‚µ‚Ä‹@”\‚³‚¹‚é
+; â– ç„¡å¤‰æ›ãƒ»å¤‰æ›ã‚­ãƒ¼å˜ç‹¬ã¯ç„¡å¤‰æ›ã‚­ãƒ¼ã¨ã—ã¦æ©Ÿèƒ½ã•ã›ã‚‹
 sc07B:: Send {Blind}{sc07B}
 sc079:: Send {Blind}{sc079}
 
-;¡•ÏŠ·iˆÚ“®Œn{BackSpace/Enterj
-; •ÏŠ·+k : ª
-; •ÏŠ·+h : ©
-; •ÏŠ·+j : «
-; •ÏŠ·+l : ¨
-; •ÏŠ·+n : Homei•¶“ª‚ÉˆÚ“®j
-; •ÏŠ·+m : Endi•¶––‚ÉˆÚ“®j
-; •ÏŠ·+u : BackSpace
-; •ÏŠ·+i : Enter
+;â– å¤‰æ›ï¼ˆç§»å‹•ç³»ï¼‹BackSpace/Enterï¼‰
+; å¤‰æ›+k : â†‘
+; å¤‰æ›+h : â†
+; å¤‰æ›+j : â†“
+; å¤‰æ›+l : â†’
+; å¤‰æ›+n : Homeï¼ˆæ–‡é ­ã«ç§»å‹•ï¼‰
+; å¤‰æ›+m : Endï¼ˆæ–‡æœ«ã«ç§»å‹•ï¼‰
+; å¤‰æ›+u : BackSpace
+; å¤‰æ›+i : Enter
 sc079 & k:: Send, {Blind}{Up}
 sc079 & h:: Send, {Blind}{Left}
 sc079 & j:: Send, {Blind}{Down}
@@ -22,38 +22,47 @@ sc079 & m:: Send, {Blind}{End}
 sc079 & u:: Send, {Blind}{BS}
 sc079 & i:: Send, {Blind}{Enter}
 
-;¡–³•ÏŠ·iƒeƒLƒXƒg•ÒWj
-;  –³•ÏŠ·+k : ‚Psíœ
-;  –³•ÏŠ·+c : ‚PsƒRƒs[
-;  –³•ÏŠ·+x : ‚PsØ‚èæ‚è
+;â– ç„¡å¤‰æ›ï¼ˆãƒ†ã‚­ã‚¹ãƒˆç·¨é›†ï¼‰
+;  ç„¡å¤‰æ›+k : ï¼‘è¡Œå‰Šé™¤
+;  ç„¡å¤‰æ›+c : ï¼‘è¡Œã‚³ãƒ”ãƒ¼
+;  ç„¡å¤‰æ›+x : ï¼‘è¡Œåˆ‡ã‚Šå–ã‚Š
 sc07B & k::Send,{Blind}{End}+{Home}{BS}
 sc07B & c::Send,{Blind}{End}+{Home}^{c}
 sc07B & x::Send,{Blind}{End}+{Home}^{x}
 
-
-;¡ “ú•tŠÖŒW
-;:today‚ÅŒ»İ“ú•t‚ğ“ü—Í
+;â–  æ—¥ä»˜é–¢ä¿‚
+;:todayã§ç¾åœ¨æ—¥ä»˜ã‚’å…¥åŠ›
 #Hotstring *
 #Hotstring O
 get_week()
 {
     FormatTime, downum,, WDay
-    dowtable := "“úŒ‰Î…–Ø‹à“y"
+    dowtable := "æ—¥æœˆç«æ°´æœ¨é‡‘åœŸ"
     startpos := ((downum-1))+1
     dowstr := ""
     StringMid, dowstr, dowtable, %startpos%, 1
     return dowstr
 }
-:::today::
+::;today::
     FormatTime, now,, yyyy/MM/dd
     dowstr := get_week()
     Clipboard = %now%(%dowstr%)
     Send,^v
 return
 
-;:now‚ÅŒ»İ“ú‚ğ“ü—Í
-:::now::
+;:nowã§ç¾åœ¨æ—¥æ™‚ã‚’å…¥åŠ›
+::;now::
     FormatTime, now,, yyyyMMdd_HHmmss
     Clipboard = %now%
     Send,^v
 return
+
+
+;â– SQL
+::;limit::
+    Send, select * from  limit 100;{Left 11}
+Return
+
+::;select::
+    Send, select * from  ;{Left 2}
+Return
