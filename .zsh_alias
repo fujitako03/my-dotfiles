@@ -24,6 +24,10 @@ cdls ()
 }
 alias d="cdls"
 
+# python
+alias python='python3'
+alias pip='pip3'
+
 # venv
 alias sv='source .venv/bin/activate'
 

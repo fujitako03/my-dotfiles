@@ -5,3 +5,6 @@ fi
 
 # alias
 source ~/.zsh_alias
+
+# pip
+export PATH="$PATH:$HOME/.local/bin"
