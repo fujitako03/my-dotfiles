@@ -66,3 +66,8 @@ Return
 ::;select::
     Send, select * from  ;{Left 2}
 Return
+
+;■ドキュメントテンプレート
+::;task::
+    Send,■目的`n`n`n■概要`n`n`n■完了条件`n`n{Left 15}
+return
