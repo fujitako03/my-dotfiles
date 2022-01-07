@@ -6,8 +6,11 @@ fi
 # alias
 source ~/.zsh_alias
 
-# pip
+# pip path
 export PATH="$PATH:$HOME/.local/bin"
+
+# theme
+prompt steeef
 
 # Ctrl+^ then ..
 function cdup() {
