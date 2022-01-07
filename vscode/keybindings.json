@@ -1,16 +1,19 @@
 // Place your key bindings in this file to override the defaults
 [
+    // 検索したときに置換も表示する
     {
         "key": "ctrl+f",
         "command": "editor.action.startFindReplaceAction",
         "when": "editorTextFocus && !inDebugRepl"
     },
+    // ターミナルとエディタをトグルで移動する
     {
-        "key": "ctrl+t",            "command": "workbench.action.terminal.focus",
-                                    "when": "editorTextFocus"
+        "key": "ctrl+`",
+        "command": "workbench.action.terminal.focus"
     },
     {
-        "key": "ctrl+e",            "command": "workbench.action.focusFirstEditorGroup",
-                                    "when": "terminalFocus"
+        "key": "ctrl+`",
+        "command": "workbench.action.focusActiveEditorGroup", 
+        "when": "terminalFocus"
     }
 ]
