@@ -9,10 +9,14 @@ alias rm='rm -i'
 alias mv='mv -i'
 alias cp='cp -i'
 
+# tmux
+alias tm='tmux'
+
 #vim
 alias v='vim'
 alias vz='vim ~/.zshrc'
 alias va='vim ~/.zsh_alias'
+alias vv='vim ~/.vimrc'
 
 #jupyter
 alias jn='jupyter notebook --NotebookApp.use_redirect_file=False'
