@@ -12,7 +12,7 @@ alias cp='cp -i'
 #vim
 alias v='vim'
 alias vz='vim ~/.zshrc'
-alias va='vim ~/.alias'
+alias va='vim ~/.zsh_alias'
 
 #jupyter
 alias jn='jupyter notebook --NotebookApp.use_redirect_file=False'

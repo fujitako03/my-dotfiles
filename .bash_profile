@@ -1,5 +1,5 @@
 # alias
-source ~/.bash_alias
+# source ~/.bash_alias
 
 # ============
 # path
