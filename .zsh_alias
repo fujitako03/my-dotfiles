@@ -17,6 +17,7 @@ alias v='vim'
 alias vz='vim ~/.zshrc'
 alias va='vim ~/.zsh_alias'
 alias vv='vim ~/.vimrc'
+alias vt='vim ~/.tmux.conf'
 
 #jupyter
 alias jn='jupyter notebook --NotebookApp.use_redirect_file=False'
