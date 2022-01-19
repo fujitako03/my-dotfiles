@@ -36,6 +36,9 @@ alias pip='pip3'
 # venv
 alias sv='source .venv/bin/activate'
 
+# pipenv
+alias ps='pipenv shell'
+
 # githubを開く
 alias github="xdg-open https://github.com/fujitako03"
 
