@@ -29,6 +29,9 @@ cdls ()
 }
 alias d="cdls"
 
+# ..
+alias ..="cd .."
+
 # python
 alias python='python3'
 alias pip='pip3'

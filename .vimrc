@@ -5,3 +5,6 @@ set number
 syntax enable
 colorscheme monokai
 
+" yank to clipboard
+set clipboard+=unnamed
+

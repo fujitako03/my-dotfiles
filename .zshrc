@@ -10,15 +10,16 @@ source ~/.zsh_alias
 export PATH="$PATH:$HOME/.local/bin"
 
 # theme
-prompt steeef
+# prompt steeef
 
 # Ctrl+^ then ..
-function cdup() {
-  echo
-  cd ..
-  prompt_${prompt_theme}_precmd
-  zle reset-prompt
-  return 0
-}
-zle -N cdup
-bindkey '^\^' cdup
+# function cdup() {
+#   echo
+#   cd ..
+#   prompt_${prompt_theme}_precmd
+#   zle reset-prompt
+#   return 0
+# }
+# zle -N cdup
+# bindkey '^\^' cdup
+
