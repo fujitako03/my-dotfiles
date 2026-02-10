@@ -42,6 +42,12 @@ alias sv='source .venv/bin/activate'
 # pipenv
 alias ps='pipenv shell'
 
+# claude code
+alias cc='claude'
+
+# zellij
+alias z="zellij a -c work"
+
 # githubを開く
 alias github="xdg-open https://github.com/fujitako03"
 
